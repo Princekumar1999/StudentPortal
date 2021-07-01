@@ -9,3 +9,6 @@ def notes(request):
 
 def books(request):
     return render(request, 'dashboard/books.html')
+
+def notes_detail(request):
+    return render(request, 'dashboard/notes_detail.html')
