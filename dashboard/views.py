@@ -6,3 +6,6 @@ def home(request):
 
 def notes(request):
     return render(request, 'dashboard/notes.html')
+
+def books(request):
+    return render(request, 'dashboard/books.html')
