@@ -10,6 +10,7 @@ class NotesForm(forms.ModelForm):
 
 class DateInput(forms.DateInput):
     input_type = 'date'
+
 class HomeworkForm(forms.ModelForm):
     class Meta:
         model = Homework
@@ -18,3 +19,9 @@ class HomeworkForm(forms.ModelForm):
 
 class DashboardForm(forms.Form):
     text = forms.CharField(max_length=100,label="Enter your search : ")
+
+class TodoForm(forms.ModelForm):
+    class Meta:
+        model = Todo
+        fields = ['title', 'is_finished']
+
