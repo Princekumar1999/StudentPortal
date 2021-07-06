@@ -1,7 +1,7 @@
 # StudentPortal
 All in one Study portal for students.
 
-# Pakages
+# Packages
   . request
   . wikipedia
   . youtubevideosearch
