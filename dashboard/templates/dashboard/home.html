@@ -8,6 +8,65 @@
   <hr> <br>
   <div class="row">
     <div class="col-md-3">
+      <a href="https://reck.ac.in/" target="_blank">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/Reck.jpg' %}" alt="RECK image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              REC Kannauj
+            </h5>
+            Click here to go to the official website of Rajkiya Engineering College Kannauj
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="https://aktu.ac.in/" target="_blank">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/Aktu.jpg' %}" alt="AKTU image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              AKTU
+            </h5>
+            Click here to go to the official website of Dr. APJ Abdul Kalam Technical University.
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3">
+      <a href="https://erp.aktu.ac.in/WebPages/Public/Students/Dashboard.aspx" target="_blank">
+        <div class="card">
+          <img class="card-img-top" src="{% static 'images/AktuDashboard.jpg' %}" alt="AKTU image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              AKTU Dashboard
+            </h5>
+            Click here to go to the AKTU Dashboard. You can see you result, download admit card, fill exam form and many more things.
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-md-3 ">
+      <a href="{% url 'colleges' %}">
+        <div class="card mt-20">
+          <img class="card-img-top" src="{% static 'images/col.jpeg' %}" alt="college image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Colleges
+            </h5>
+            Browse universities and colleges from a list of affiliated colleges.
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <br><br><br>
+
+  <div class="row">
+    <div class="col-md-3">
       <a href="{% url 'notes' %}">
         <div class="card">
           <img class="card-img-top" src="{% static 'images/notes.jpg' %}" alt="Notes image">
@@ -34,6 +93,7 @@
         </div>
       </a>
     </div>
+
     <div class="col-md-3">
       <a href="{% url 'youtube' %}">
         <div class="card">
@@ -47,6 +107,7 @@
         </div>
       </a>
     </div>
+
     <div class="col-md-3">
       <a href="{% url 'todo' %}">
         <div class="card">
@@ -62,6 +123,7 @@
     </div>
   </div>
   <br><br><br>
+
   <div class="row">
     <div class="col-md-3 ">
       <a href="{% url 'books' %}">
@@ -77,8 +139,6 @@
       </a>
     </div>
 
-
-
     <div class="col-md-3">
       <a href="{% url 'dictionary' %}">
         <div class="card">
@@ -93,6 +153,7 @@
         </div>
       </a>
     </div>
+
     <div class="col-md-3">
       <a href="{% url 'wiki' %}">
         <div class="card">
@@ -106,7 +167,6 @@
         </div>
       </a>
     </div>
-
 
     <div class="col-md-3">
       <a href="{% url 'conversion' %}">
@@ -123,21 +183,6 @@
     </div>
   </div>
   <br><br><br>
-  <div class="row">
-    <div class="col-md-3 ">
-      <a href="{% url 'colleges' %}">
-        <div class="card mt-20">
-          <img class="card-img-top" src="{% static 'images/col.jpeg' %}" alt="college image">
-          <div class="card-body">
-            <h5 class="card-title ">
-              Colleges
-            </h5>
-            Browse universities and colleges from a list of affiliated colleges.
-          </div>
-        </div>
-      </a>
-    </div>
-  </div>
-
+  
 </section>
 {% endblock content %}
