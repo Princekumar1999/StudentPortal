@@ -1,5 +1,5 @@
-{% extends 'dashboard/base.html' %} 
-{% load static %} 
+{% extends 'dashboard/base.html' %}
+{% load static %}
 {% block content %}
 
 <section class="container text-center">
@@ -122,7 +122,22 @@
       </a>
     </div>
   </div>
-
+  <br><br><br>
+  <div class="row">
+    <div class="col-md-3 ">
+      <a href="{% url 'colleges' %}">
+        <div class="card mt-20">
+          <img class="card-img-top" src="{% static 'images/col.jpeg' %}" alt="college image">
+          <div class="card-body">
+            <h5 class="card-title ">
+              Colleges
+            </h5>
+            Browse universities and colleges from a list of affiliated colleges.
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
 
 </section>
 {% endblock content %}

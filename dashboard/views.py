@@ -13,6 +13,9 @@ from django.contrib.auth.decorators import login_required
 def home(request):
     return render(request, 'dashboard/home.html')
 
+def colleges(request):
+    return render(request, 'dashboard/colleges.html')
+
 @login_required
 def notes(request):
     if request.method == "POST":
